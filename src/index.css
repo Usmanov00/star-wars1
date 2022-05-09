@@ -112,11 +112,16 @@ code {
     color: #90caf9;
 }
 
+.pagination-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .pagination-btn{
 
-
- cursor: pointer;
+    cursor: pointer;
     padding: 5px;
     margin: 0 5px 20px;
     border-radius: 3px;
@@ -186,3 +191,22 @@ code {
 
     }
 }
+
+.back{
+    padding-bottom: 10px;
+}
+
+.box-btn span{
+    padding:0 10px 10px 0;
+}
+
+.btn{
+    background-color: #ffc400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+
+}
+
+

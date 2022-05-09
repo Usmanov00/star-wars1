@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
 
@@ -18,6 +18,14 @@ const FilmInfo = () => {
     return <Spinner />
   }
   return (
+    <>
+      <div className="back">
+        {
+          <Link to={`/films/`}>
+            <button className="btn">Back</button>
+          </Link>
+        }
+      </div>
     <div className="box">
       <div className="img">
         <img src={`https://starwars-visualguide.com/assets/img/films/${id}.jpg`} alt=""
@@ -30,9 +38,21 @@ const FilmInfo = () => {
         <div><span className="info-title">Director: </span>{films.director}</div>
         <div><span className="info-title">Producer: </span>{films.producer}</div>
         <div><span className="info-title">Release date: </span>{films.release_date}</div>
-
       </div>
     </div>
+      <div className="box-btn">
+        <span>
+          <Link to={`/films/${+id - 1}`}>
+          <button className="btn">Previous</button>
+        </Link>
+        </span>
+        <span>
+          <Link to={`/films/${+id + 1}`}>
+          <button className="btn">Next</button>
+        </Link>
+        </span>
+      </div>
+    </>
   );
 };
 

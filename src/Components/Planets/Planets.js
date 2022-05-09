@@ -20,12 +20,19 @@ const Planets = () => {
 
   return (
     <div>
-      <div className="pagination">
+      <div className="pagination-box">
         {
-          Array(Math.ceil(planets.count / 10)).fill(0).map((buttonNum, idx) => (
-            <button key={idx} className="pagination-btn" onClick={() => setPage(idx + 1)}>{idx + 1}</button>
-          ))
+          <Link to={`/`}>
+            <button>Back</button>
+          </Link>
         }
+        <div className="pagination">
+          {
+            Array(Math.ceil(planets.count / 10)).fill(0).map((buttonNum, idx) => (
+              <button key={idx} className="pagination-btn" onClick={() => setPage(idx + 1)}>{idx + 1}</button>
+            ))
+          }
+        </div>
       </div>
       <div className="row">
         {

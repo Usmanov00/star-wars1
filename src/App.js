@@ -32,9 +32,9 @@ const App = () => {
           <Route path="/species" element={<Species />} />
           <Route path="/species/:id" element={<SpeciesInfo />} />
           <Route path="/starships" element={<Starships />} />
-          <Route path="/starships/:id" element={StarshipInfo} />
+          <Route path="/starships/:id" element={<StarshipInfo />} />
           <Route path="/vehicles" element={<Vehicles />} />
-          <Route path="/vehicles/:id" element={VehiclesInfo}/>
+          <Route path="/vehicles/:id" element={<VehiclesInfo />}/>
           <Route path="/planets" element={<Planets />} />
           <Route path="/planets/:id" element={<PlanetInfo />} />
         </Routes>

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
 
@@ -18,6 +18,14 @@ const CharacterInfo = () => {
     return <Spinner/>
   }
   return (
+    <>
+      <div className="back">
+        {
+          <Link to={`/characters/`}>
+            <button className="btn">Back</button>
+          </Link>
+        }
+      </div>
     <div className="box">
       <div className="img">
       <img src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} alt=""
@@ -34,6 +42,19 @@ const CharacterInfo = () => {
       <div className="info-item">Gender: {character.gender}</div>
       </div>
     </div>
+      <div className="box-btn">
+        <span>
+          <Link to={`/characters/${+id - 1}`}>
+          <button className="btn">Previous</button>
+        </Link>
+        </span>
+        <span>
+          <Link to={`/characters/${+id + 1}`}>
+          <button className="btn">Next</button>
+        </Link>
+        </span>
+      </div>
+    </>
   );
 };
 

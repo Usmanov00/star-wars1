@@ -19,13 +19,26 @@ import Spinner from "../Spinner";
     }
 
     return (
-      <div>
-        <img src={`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`} alt=""
-             className="element-img"/>
-        <div>{starship.title}</div>
-
-        <br/>
-        {starship.opening_crawl}
+      <div className="box">
+        <div className="img">
+          <img src={`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`} alt=""
+               className="element-img"/>
+        </div>
+        <div className="info">
+          <div className="info-item">Name: <u> <strong> {starship.name}</strong></u></div>
+          <div className="info-item">Model: {starship.model}</div>
+          <div className="info-item">Manufacturer: {starship.manufacturer}</div>
+          <div className="info-item">Cost_in_credits: {starship.cost_in_credits}</div>
+          <div className="info-item">Length: {starship.length}</div>
+          <div className="info-item">Max_atmosphering_speed: {starship.max_atmosphering_speed}</div>
+          <div className="info-item">Crew: {starship.crew}</div>
+          <div className="info-item">Passengers: {starship.passengers}</div>
+          <div className="info-item">Cargo_capacity: {starship.cargo_capacity}</div>
+          <div className="info-item">Consumables: {starship.consumables}</div>
+          <div className="info-item">Hyperdrive_rating: {starship.hyperdrive_rating}</div>
+          <div className="info-item">MGLT: {starship.MGLT}</div>
+          <div className="info-item">Starship_class: {starship.starship_class}</div>
+        </div>
       </div>
     );
   };
