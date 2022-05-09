@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    background-color: #181717;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+
+}
+
+.col-4{
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+.element-item{
+    margin-bottom: 30px;
+
+
+}
+
+
+.element-item li {
+    list-style: none;
+
+}
+
+.element-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.pagination{
+    text-align: end;
+}
+
+.type {
+    position: relative;
+}
+
+.title-img{
+    background-color: rgba(0,0,0,.4);
+    padding: 0 100px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 190%);
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fbc201;
+
+}
+.characters-color{
+    color: #e53935;
+
+}
+
+.films-color{
+    color: #ffee58;
+}
+
+.species-color{
+    color: #f4511e;
+}
+
+.starships-color{
+    color: #fff;
+}
+
+.vehicles-color{
+    color: #90caf9;
+}
+
+
+.pagination-btn{
+
+
+ cursor: pointer;
+    padding: 5px;
+    margin: 0 5px 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+
+}
+
+.info{
+    background-color: #FFF;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    overflow-y:  scroll;
+    white-space: pre-wrap;
+
+
+}
+
+.info .info-title{
+    font-size: 25px;
+}
+
+
+.info-item{
+    padding: 5px 0;
+}
