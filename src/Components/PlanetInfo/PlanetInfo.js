@@ -32,15 +32,15 @@ const PlanetInfo = () => {
            className="element-img"/>
       </div>
       <div className="info">
-      <div>Name: {planet.name}</div>
-      <div>Name: {planet.rotation_period}</div>
-      <div>Name: {planet.orbital}</div>
-      <div>Name: {planet.diameter}</div>
-      <div>Name: {planet.clime}</div>
-      <div>Name: {planet.gravity}</div>
-      <div>Name: {planet.terrian}</div>
-      <div>Name: {planet.surface_water}</div>
-      <div>Population: {planet.population}</div>
+      <div className="info-item">Name: <u><strong>{planet.name}</strong></u></div>
+      <div className="info-item">Rotation_period: {planet.rotation_period}</div>
+      <div className="info-item">Orbital: {planet.orbital_period}</div>
+      <div className="info-item">Diameter: {planet.diameter}</div>
+      <div className="info-item">Climate: {planet.climate}</div>
+      <div className="info-item">Gravity: {planet.gravity}</div>
+      <div className="info-item">Terrain: {planet.terrain}</div>
+      <div className="info-item">Surface_water: {planet.surface_water}</div>
+      <div className="info-item">Population: {planet.population}</div>
       </div>
     </div>
       <div className="box-btn">

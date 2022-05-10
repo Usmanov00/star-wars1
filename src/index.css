@@ -23,7 +23,7 @@ body {
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     color: #000;
-    background-color: #181717;
+    background-image: url("../src/assets/images/space-universe-planets-dark-background-stars-uncountable-abstract-1080P-wallpaper.jpeg") ;
 }
 
 code {
