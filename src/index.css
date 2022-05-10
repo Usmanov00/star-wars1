@@ -76,6 +76,7 @@ code {
     text-align: end;
 }
 
+
 .type {
     position: relative;
 }
@@ -121,12 +122,25 @@ code {
 
 
 .pagination-btn{
-
     cursor: pointer;
-    padding: 5px;
     margin: 0 5px 20px;
-    border-radius: 3px;
-    border: none;
+    padding: 5px 10px;
+    border: 2px solid lightyellow;
+    border-radius: 5px;
+    font-size: 16px;
+    color: navy;
+    font-weight: 600;
+}
+
+.pagination-box button{
+    cursor: pointer;
+    margin: 0 5px 20px;
+    padding: 5px 10px;
+    border: 2px solid #fcfcd9;
+    border-radius: 5px;
+    font-size: 16px;
+    color: navy;
+    font-weight: 600;
 }
 
 .item {
@@ -204,9 +218,17 @@ code {
 .btn{
     background-color: #ffc400;
     color: #fff;
-    border: none;
+
     border-radius: 5px;
-    padding: 2px 5px;
+
+    cursor: pointer;
+    margin: 0 5px 20px;
+    padding: 5px 10px;
+    border: 2px solid lightyellow;
+
+    font-size: 16px;
+
+    font-weight: 600;
 
 }
 
